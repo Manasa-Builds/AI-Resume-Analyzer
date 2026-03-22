@@ -20,8 +20,7 @@ if file is not None:
             text += page.extract_text() or ""
 
     words = text.lower()
-
-    # Role skills
+    
     role_skills = {
         "Developer": ['python','java','c','sql'],
         "Data Analyst": ['python','sql','excel','powerbi'],
@@ -57,8 +56,7 @@ if file is not None:
        best_role=max(role_score,key=role_score.get)
 
     score = (len(found) / len(skills)) * 100
-
-    # Display results
+    
     st.subheader("Results")
     if len(found)==0:
        st.warning("No relevant skills found in resume")
@@ -74,7 +72,6 @@ if file is not None:
     else:
       st.warning("Needs Improvement ⚠️")
 
-    # Suggestions
     if missing:
         st.subheader("Suggestions")
         for skill in missing:
