@@ -21,3 +21,11 @@ This is a Streamlit-based web application that analyzes resumes and provides fee
 
 2. Run the app:
    streamlit run app.py
+   
+## Application Preview
+
+### Upload Screen
+![Upload Screen](upload.png)
+
+### Results Screen
+![Results Screen](result.png)
